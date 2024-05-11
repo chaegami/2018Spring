@@ -27,6 +27,7 @@
   const photoContainer = document.getElementById("photos");
 
   for (var i = 0; i < 97; i++) {
+    if (i === 4) { continue; }
     const img = document.createElement("img");
     img.setAttribute('src', `resizedPMC2018Spring/${i}.jpg`);
     setTimeout(function() {
